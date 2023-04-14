@@ -1,0 +1,436 @@
+
+/********header******/
+<header>
+  <div>
+    <img src="Untitled design.png" class="logo" style="width: 150px;">
+  </div>
+  <div class="hamburger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <nav class="nav-bar">
+    <ul>
+      <li><a href=" ">About</a></li>
+      <li><a href=" ">Team</a></li>
+      <li><a href=" " class="active">Advisor</a></li>
+      <li><a href=" ">Sponsor</a></li>
+      <li><a href="achivement.html">Achievement</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</Contact></a></li>
+    </ul>
+  </nav>
+</header>
+<div class="sami"></div>
+
+
+<script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function () {
+      navBar = document.querySelector(".nav-bar");
+      navBar.classList.toggle("active");
+    }
+  </script>
+  
+  <script>
+    const hamburgers = document.querySelectorAll('.hamburger');
+    const samis = document.querySelectorAll('.sami');
+  
+    hamburgers.forEach((hamburger, index) => {
+      hamburger.addEventListener('click', () => {
+        if (samis[index].style.height === '450px') {
+          samis[index].style.height = '2px';
+        } else {
+          samis[index].style.height = '250px';
+        }
+      });
+    });
+  
+  </script>
+  
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+
+  header {
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+
+}
+
+.sami {
+    background-color: #ffffff;
+    height: 1px;
+    transition: height 0.5s ease;
+}
+
+.logo {
+    width: 200px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #171515;
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+
+}
+
+.nav-bar ul li a:hover {
+    background: #171515;
+    color: #fefefe;
+}
+
+.nav-bar ul li a.active {
+    background: #171515;
+    color: #fefefe;
+}
+
+@media only screen and (max-width:400px) {
+    .logo {
+        width: 130px;
+    }
+}
+
+@media only screen and (max-width:1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+
+@media only screen and (max-width:1100px) {
+    header {
+        padding: 0 30px;
+    }
+
+    .nav-bar ul li a {
+        padding: 10px 13px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .nav-bar ul li a {
+        padding: 10px 8px;
+    }
+}
+
+
+
+
+@media only screen and (max-width:800px) {
+    header {
+        padding: 0 20px;
+    }
+
+    .nav-bar ul li a {
+        padding: 10px 5px;
+    }
+}
+
+
+@media only screen and (max-width:750px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #171515;
+        margin: 6px 0;
+        border-bottom-right-radius: 10px;
+    }
+
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #f4f5f8;
+        transition: 0.2s;
+        overflow: hidden;
+        z-index: 100;
+    }
+
+    .nav-bar.active {
+        height: 100%;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 40px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 10px;
+
+    }
+}
+
+
+
+
+/***************footer************/
+footer>
+  <div class="content923">
+
+    <div class="map">
+      <p><iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7777.952262354541!2d77.56368199444965!3d12.909255593568705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae156310100001%3A0x71be53da4480fbbe!2sDayananda%20Sagar%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1673354105030!5m2!1sen!2sin"
+          width="300px" height="150px" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+    </div>
+
+
+    <ul class="social-icon">
+
+      <li><a href="https://www.facebook.com/TeamArcis/?ref=br_rs" target="_blank"><ion-icon
+            name="logo-facebook"></ion-icon></a></li>
+      <li><a href="https://www.instagram.com/teamarcis/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+      </li>
+      <li><a href="https://www.youtube.com/channel/UCgNXVEqEhOzzWZ6XdZAd-1A" target="_blank"><ion-icon
+            name="logo-youtube"></ion-icon></a></li>
+      <li><a href="https://www.linkedin.com/company/team-arcis/" target="_blank"><ion-icon
+            name="logo-linkedin"></ion-icon></a></li>
+      <li><a href="https://teamarcis.medium.com/" target="_blank"><ion-icon name="logo-medium"></ion-icon></a></li>
+      <li><a href="https://www.behance.net/team_arcis" target="_blank"><ion-icon name="logo-behance"></ion-icon></a>
+      </li>
+    </ul>
+
+
+    <div class="menu">
+      <ul>
+        <div class="so-menu">
+          <p>RESOURCES</p>
+        </div>
+        <ol>
+          <li><a href="https://www.saeaerodesign.com/"> SAE AERO DESIGN </a></li>
+          <li><a href="https://www.aiaa.org/dbf/example-dbf-feature">AIAA-DBF</a></li>
+          <li><a href="https://www.dsce.edu.in/">DSCE </a></li>
+        </ol>
+      </ul>
+    </div>
+
+  </div>
+  <div class="waves"></div>
+</footer>
+
+:root {
+    --color: #4973ff;
+}
+
+.content923 {
+
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    background: #333333;
+    color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+footer .content923 {
+    position: static;
+    width: 100%;
+    min-height: 40px;
+    padding: 20px 40px;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .map {
+    position: relative;
+    z-index: 1;
+    margin: 0 0 10px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+footer .social-icon {
+    position: relative;
+    z-index: 1;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.4;
+}
+
+footer .social-icon {
+    list-style: none;
+}
+
+:host .ionicon {
+    color: white;
+}
+
+footer .menu {
+    position: relative;
+    z-index: 1;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.5);
+    list-style: none;
+}
+
+footer .menu li {
+    list-style: none;
+}
+
+
+footer .social-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+
+footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px 0;
+    flex-wrap: wrap;
+    margin-left: 10%;
+
+}
+
+
+footer .social-icon li a {
+    color: rgb(247, 244, 244);
+    margin: 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .menu li a {
+    color: rgb(247, 244, 244);
+    margin: 4px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social-icon li a:hover {
+    transform: translateY(-10px);
+}
+
+
+
+footer .menu ol li :hover {
+    transform: translateX(20px);
+
+}
+
+
+@media (max-width:1070px) {
+    footer {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        align-content: center;
+
+    }
+
+    footer .social-icon {
+        justify-content: center;
+        margin: auto;
+    }
+
+}
+
+@media (max-width:1070px) {
+    footer .menu {
+        margin-left: 4%;
+    }
+}
+
+@media (max-width:900px) {
+    footer .menu {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background-color: var(--color);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: 500ms;
+}
+
+.waves::before,
+.waves::after {
+    content: '';
+    position: absolute;
+    width: 300vw;
+    height: 300vw;
+    top: -65vw;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+
+.waves::before {
+    border-radius: 44%;
+    background: rgba(51, 51, 51, 1);
+    animation: waves 8s linear infinite;
+}
+
+.waves::after {
+    border-radius: 44%;
+    background: rgba(51, 51, 51, 0.5);
+    animation: waves 15s linear infinite;
+}
+
+@keyframes waves {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}

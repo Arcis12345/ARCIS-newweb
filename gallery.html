@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEAM ARCIS | Gallery</title>
+
+    <style>
+      #container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      #container img {
+        position: absolute;
+        top: -200px;
+        left: -200px;
+        transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+        transform: scale(0);
+      }
+      .show {
+        transform: scale(1);
+      }
+      #point {
+        position: absolute;
+        top: -1000px;
+        left: -1000px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: red;
+      }
+    </style>
+
+
+    <link rel ="stylesheet" href="gallery.css">
+</head>
+<body>
+    <header>
+        <div >
+             <img src="Untitled design.png" class="logo" style="width: 150px;"></div>
+          <div class="hamburger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+          </div>
+        <nav class="nav-bar">
+          <ul>
+            <li><a href="HOMEpgh.html" >Home</a></li>
+                     <li><a href="TEAMINDEXpgh.html" >Our Team</a></li>
+                     <li><a href="GUIDEpgh.html">Advisor</a></li>
+                     <li><a  href="sponsor.html">Sponsor</a></li>
+                     <li><a  href="achivement.html">Achievement</a></li>
+                     <li><a  href="gallery.html" class="active" >Gallery</a></li>
+                     <li><a  href="OURCREATIONpgh.html">Our Creations</a></li>
+                     <li><a  href="contact.html">Contact</Contact></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      
+      
+     <div class="sami"></div>
+
+      <div class="container"></div>
+
+    <!--
+        <img   class="image"   src="team 2013-2014.jpg"  class="m-p-g__thumbs-img"  >    
+        <img   class="image"   src="team2014-2015.jpg"   >   
+        <img   class="image"   src="team2015-2016.jpg"    >  
+        <img   class="image"   src="team2017-2018.png"   >   
+        <img   class="image"   src="team2018-2019.jpg"    >  
+        <img   class="image"   src="team2020-2021.jpg"    >  
+        <img   class="image"   src="team2021-2022.jpg"   >  
+        <img   class="image"   src="team1.1.png"        >  
+        <img   class="image"   src="team1.2.png"       >  
+        <img   class="image"   src="team1.3.png"      > 
+        <img   class="image"   src="team1.4.png"     >    
+        <img   class="image"   src="team1.6.png"    >       
+        <img   class="image"   src="team1.9.png"      >     
+        <img  class="image"    src="team1.10.png"      >    
+        <img   class="image"   src="team1.11.png"   >      
+        <img   class="image"   src="team1.14.png"   >   
+        <img   class="image"   src="team1.15.png"   >    
+        <img   class="image"   src="team1.16.png"    >     
+        <img    class="image"  src="17.png"     >      
+        <img    class="image"  src="19.png"      >      
+        <img    class="image"  src="20.png"    >   
+        <img    class="image"  src="21.png"    >       
+        <img    class="image"  src="23.png"      >     
+        <img    class="image"  src="23.png"    >     
+        <img    class="image"  src="24.png"     >     
+        <img    class="image"  src="25.png"   >         
+        <img    class="image" src="26.png"    >           
+        <img   class="image" src="28.png"   >    
+        <img   class="image" src="29.png"     >       
+        <img   class="image"   src="31.png"   >          
+        <img   class="image"  src="33.png"  >       
+        <img   class="image"   src="34.png"  >        
+        <img   class="image"  src="35.png" >       
+        <img   class="image" src="36.png"  >      
+              
+      </div>
+       
+
+       <!--<div id="container">
+        <img src="21.png">
+        <img src="22.png">
+        <img src="23.png">
+        <img src="24.png">
+        Add the remaining images here
+      </div>
+      <div id="point"></div>-->
+      
+
+      <!--<div class="container">
+        <div class="cursor-follower"></div>
+        <div class="images"></div>
+      </div>-->
+
+
+
+
+
+  <div class="noduva">
+     <section class="gallery">
+  <input id="gallery__item--0" type="radio" name="gallery__items" checked="true"/>
+  <label class="gallery__item" for="gallery__item--0">gallery item 0<img src="team 2013-2014.jpg" alt="image 0"/></label>
+  <input id="gallery__item--1" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--1">gallery item 1<img src="team2014-2015.jpg" alt=" image 1"/></label>
+  <input id="gallery__item--2" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--2">gallery item 2<img src="team2015-2016.jpg" alt=" image 2"/></label>
+  <input id="gallery__item--3" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--3">gallery item 3<img src="team2016-2017.jpg" alt=" image 3"/></label>
+  <input id="gallery__item--4" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--4">gallery item 4<img src="team2017-2018.png" alt=" image 4"/></label>
+  <input id="gallery__item--5" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--5">gallery item 5<img src="team2018-2019.jpg" alt="image 5"/></label>
+  <input id="gallery__item--6" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--6">gallery item 6<img src="team2019-2020.jpg" alt="image 6"/></label>
+  <input id="gallery__item--7" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--7">gallery item 7<img src="team2020-2021.jpg" alt="image 7"/></label>
+  <input id="gallery__item--8" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--8">gallery item 8<img src="team2021-2022.jpg" alt="image 8"/></label>
+  <input id="gallery__item--9" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--9">gallery item 9<img src="team1.1.png" alt="image 9"/></label>
+  <input id="gallery__item--10" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--10">gallery item 10<img src="team1.2.png" alt="image 10"/></label>
+  <input id="gallery__item--11" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--11">gallery item 11<img src="team1.3.png" alt="image 11"/></label>
+  <input id="gallery__item--12" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--12">gallery item 12<img src="team1.4.png" alt="image 12"/></label>
+  <input id="gallery__item--13" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--13">gallery item 13<img src="team1.6.png" alt="image 13"/></label>
+  <input id="gallery__item--14" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--14">gallery item 14<img src="team1.9.png" alt="image 14"/></label>
+  <input id="gallery__item--15" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--15">gallery item 15<img src="team1.10.png" alt="image 15"/></label>
+  <input id="gallery__item--16" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--16">gallery item 16<img src="team1.11.png" alt="image 16"/></label>
+  <input id="gallery__item--17" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--17">gallery item 17<img src="team1.14.png" alt="image 17"/></label>
+  <input id="gallery__item--18" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--18">gallery item 18<img src="team1.16.png" alt="image 18"/></label>
+  <input id="gallery__item--19" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--19">gallery item 19<img src="17.png" alt="image 19"/></label>
+  <input id="gallery__item--20" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--20">gallery item 20<img src="19.png" alt="image 20"/></label>
+  <input id="gallery__item--21" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--21">gallery item 21<img src="20.png" alt="image 21"/></label>
+  <input id="gallery__item--22" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--22">gallery item 22<img src="21.png" alt="image 22"/></label>
+  <input id="gallery__item--23" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--23">gallery item 23<img src="23.png" alt="image 23"/></label>
+  <input id="gallery__item--24" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--24">gallery item 24<img src="24.png" alt="image 24"/></label>
+  <input id="gallery__item--25" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--25">gallery item 25<img src="25.png" alt="image 25"/></label>
+  <input id="gallery__item--26" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--26">gallery item 26<img src="26.png" alt="image 26"/></label>
+  <input id="gallery__item--27" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--27">gallery item 27<img src="28.png" alt="image 27"/></label>
+  <input id="gallery__item--28" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--28">gallery item 28<img src="29.png" alt="image 28"/></label>
+  <input id="gallery__item--29" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--29">gallery item 29<img src="31.png" alt="image 29"/></label>
+  <input id="gallery__item--30" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--30">gallery item 30<img src="33.png" alt="image 30"/></label>
+  <input id="gallery__item--31" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--31">gallery item 31<img src="34.png" alt="image 31"/></label>
+  <input id="gallery__item--32" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--32">gallery item 32<img src="35.png" alt="image 32"/></label>
+  <input id="gallery__item--33" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--33">gallery item 33<img src="36.png" alt="image 33"/></label>
+  <input id="gallery__item--34" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--34">gallery item 34<img src="Image 3.png" alt="image 34"/></label>
+  <input id="gallery__item--35" type="radio" name="gallery__items"/>
+  <label class="gallery__item" for="gallery__item--35">gallery item 35<img src="2012-2013.png" alt="image 35"/></label>
+     </section>
+
+   </div>
+
+
+
+
+
+
+
+
+    
+
+
+      <footer>
+        <div class="content923">
+      
+          <div class="map">
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7777.952262354541!2d77.56368199444965!3d12.909255593568705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae156310100001%3A0x71be53da4480fbbe!2sDayananda%20Sagar%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1673354105030!5m2!1sen!2sin"  width="300px" height="150px"style="border:0;"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+           </div>
+           
+           
+           <ul class="social-icon">
+      
+            <li><a href="https://www.facebook.com/TeamArcis/?ref=br_rs" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/teamarcis/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://www.youtube.com/channel/UCgNXVEqEhOzzWZ6XdZAd-1A" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/company/team-arcis/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="https://teamarcis.medium.com/" target="_blank"><ion-icon name="logo-medium"></ion-icon></a></li>
+            <li><a href="https://www.behance.net/team_arcis" target="_blank"><ion-icon name="logo-behance"></ion-icon></a></li>
+          </ul>
+      
+      
+          <div class="menu">
+           <ul>
+            <div class="so-menu">
+               <p>RESOURCES</p>
+            </div>
+            <ol>
+              <li><a href="https://www.saeaerodesign.com/"> SAE AERO DESIGN </a></li>
+              <li><a href="https://www.aiaa.org/dbf/example-dbf-feature">AIAA-DBF</a></li>
+              <li><a href="https://www.dsce.edu.in/">DSCE </a></li>
+            </ol>
+        </ul>
+          </div>
+          
+          </div>
+        <div class="waves"></div>
+      </footer>
+      
+
+
+      
+
+      <script>
+
+        hamburger = document.querySelector(".hamburger"); 
+        hamburger.onclick = function(){
+         navBar = document.querySelector(".nav-bar");
+         navBar.classList.toggle("active");
+         }
+     </script>
+
+
+<script>
+const container = document.querySelector('.container');
+container.addEventListener('mousemove', handleMouseMove);
+
+const images = [
+  "2013-2014.jpg",,"team2015-2016.jpg","team2017-2018.png","team2020-2021.jpg","team2021-2022.jpg","image 3.png","CDA_1.jpj","team1.1.png" ,"team1.2.png","team1.3.png" ,"team1.4.png","team1.6.png","team1.9.png","team1.10.png","team1.11.png" ,"team1.14.png","team1.15.png" ,"team1.16.png","17.png","19.png","20.png","21.png","23.png","25.png" ,"28.png","29.png","31.png", "33.png" ,"34.png","35.png","36.png"
+];
+
+
+function handleMouseMove(event) {
+  const image = document.createElement('img');
+  const randomIndex = Math.floor(Math.random() * images.length);
+  image.src = images[randomIndex];
+  image.classList.add('random-image');
+
+  // choose random initial position and movement
+  const initialX = getRandomValue(-200, 200);
+  const initialY = getRandomValue(-200, 200);
+  const movementX = getRandomValue(-200, 200);
+  const movementY = getRandomValue(-200, 200);
+
+  image.style.left = event.clientX + initialX + 'px';
+  image.style.top = event.clientY + initialY + 'px';
+  document.body.appendChild(image);
+
+  setTimeout(() => {
+    image.style.transform = `translate(${movementX}px, ${movementY}px)`;
+    setTimeout(() => {
+      image.parentNode.removeChild(image);
+    }, 500);
+  }, 1000);
+}
+
+function getRandomValue(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+</script>
+  
+   
+
+
+<script>
+  const hamburgers = document.querySelectorAll('.hamburger');
+const samis = document.querySelectorAll('.sami');
+
+hamburgers.forEach((hamburger, index) => {
+  hamburger.addEventListener('click', () => {
+    if (samis[index].style.height === '450px') {
+      samis[index].style.height = '2px';
+    } else {
+      samis[index].style.height = '450px';
+    }
+  });
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,862 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+  
+  }
+  .logo
+  {
+    width: 200px;
+  }
+  .hamburger
+  {
+    display: none;
+  }
+  
+  .nav-bar ul 
+  {
+    display: flex;
+  }
+  
+  .nav-bar ul li a
+  {
+    display: block;
+    color: #171515;
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+  
+  }
+  
+  .nav-bar ul li a:hover{
+    background: #171515;
+    color: #fefefe;
+  }
+  .nav-bar ul li a.active{
+    background: #171515;
+    color: #fefefe;
+  }
+  
+  @media only screen and (max-width:1320px)
+  {
+    header
+    {
+      padding: 0 50px;
+    }
+  }
+  
+  
+  @media only screen and (max-width:1100px)
+  {
+    header
+    {
+      padding: 0 30px;
+    }
+    .nav-bar ul li a {
+    padding: 10px 13px;
+    }
+  }
+  
+  @media only screen and (max-width:900px)
+  {
+    .nav-bar ul li a {
+    padding: 10px 8px;
+    }
+  }
+
+  @media only screen and (max-width:800px)
+  {
+    header
+    {
+      padding: 0 20px;
+    }
+    .nav-bar ul li a {
+    padding: 10px 5px;
+    }
+  }
+  
+  
+  @media only screen and (max-width:750px)
+  {
+    .hamburger 
+    {
+      display:block;
+      cursor:pointer;
+  
+    }
+    .hamburger .line
+    {
+      width:30px;
+      height:3px;
+      background: #171515;
+      margin: 6px 0;
+    }
+    .nav-bar{
+      height: 0;
+      position: absolute;
+      top:80px;
+      left:0;
+      right: 0;
+      width: 100vw;
+      background: #f3f4f7;
+      transition: 0.2s;
+      overflow: hidden;
+      z-index: 100000;
+    }
+    .nav-bar.active
+    {
+      height: 100%;
+    }
+     .nav-bar ul 
+     { 
+      display: block;
+      width: fit-content;
+      margin: 40px auto 0 auto;
+      text-align: center;
+      transition: 0.5s;
+      opacity:0;
+     }
+     .nav-bar.active ul 
+     {
+     opacity: 1;
+     }
+     .nav-bar ul li a {
+      margin-bottom:10px;
+     }
+  } 
+
+.sami
+{
+    background-color: #ffffff;
+    height: 1px;
+    transition: height 0.5s ease;
+}
+/*
+section
+{
+    background: linear-gradient(  90deg,lightblue 30% , #0a2c75 70%);
+
+}
+ .conthtml {
+    text-align:  center;
+    font-family: Georgia, serif;
+    text-shadow: 1px 0px 1px #f3f4f7;
+    margin-bottom: 50px;
+    margin: 0 auto;
+    max-width: 550px;
+    position: relative;
+    padding-bottom: 1px;
+
+    
+ }*/
+
+
+.Aviation{
+padding-top: 225px;
+padding-left:500px;
+font-size: 35px;
+text-transform: uppercase;
+color: white;
+}
+
+.sec-1
+{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(  90deg,lightblue 30% , #0a2c75 70%);
+
+}
+.container 
+{
+ position: relative;
+ min-width:1100px;
+ min-height: 550px;
+ display: flex;
+ z-index: 1000;
+ 
+}
+.container .contactinfo
+{
+    position: absolute;
+    top: 40px;
+    width:350px;
+    height:calc(100% - 80px);
+    background:rgb(68, 147, 147); /*97 142 142*/
+    z-index:1;
+    padding: 28px;
+    justify-content: center;
+    flex-direction: center;
+    justify-content: space-between;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.15);
+    border-radius: 1em;
+
+}
+.container .contactinfo h2
+{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left:50px;
+    padding-top: 10px;
+}
+.container .contactinfo  ul.info
+{
+    padding-top:8px ;
+    position: relative;
+    margin:10px 0;
+
+}
+.container .contactinfo  ul.info li
+{
+    position:relative;
+    list-style:none ;
+    display: flex;
+    margin: 30px 0;
+    cursor: pointer;
+    align-items: flex-start;
+
+}
+.container .contactinfo  ul.info li .gg 
+{
+    position:relative;
+    list-style:none ;
+    text-decoration: none;
+    color: white;
+}
+
+
+.container .contactinfo  ul.info li span:nth-child(1)
+{
+ width:30px;
+ min-width: 30px;
+}
+
+.container .contactinfo  ul.info li span:nth-child(1) img
+{
+    max-width: 100%;
+    filter:invert(1) ;
+}
+
+.container .contactinfo  ul.info li span:nth-child(2)
+{
+ color: #fff;
+ margin-left: 10px;
+ font-weight: 300;
+}
+
+.container .contactinfo ul.sci
+{
+    position: relative;
+    display: flex;
+    position: absolute;
+}
+.container .contactinfo ul.sci li 
+{
+    list-style: none;
+    margin-right: 12px;
+    padding-top:16px;
+}
+.contactinfo ul.sci li a
+{
+text-decoration: none;
+margin-bottom: 10px;
+}
+
+.container .contactinfo ul.sci li a
+{
+ font-size: 2em;
+position: relative;
+}
+.sci a
+{
+   font-size: 2em;
+    color:rgb(247, 244, 244);
+    margin:  4px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.sci a:hover
+{ 
+    transform: translatey(-20px);
+}
+
+
+.container .contactform
+{
+position: absolute;
+padding: 70px 50px;
+padding-left: 250px;
+margin-left: 150px;
+width: calc(100% - 150px);
+height: 100%;
+background: white;
+box-shadow:0 50px 50px rgba( 0 ,0 ,0 , 0.15) ;
+border-radius: 1em;
+}
+
+.container .contactform h2
+{
+    color: #0f3959;
+    font-size: 34px;
+    font-weight: 500;
+}
+.container .contactform .formbox
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.container .contactform .formbox .inputbox
+{
+ position: relative;
+ margin-bottom:35px ;
+
+}
+
+.container .contactform .formbox .inputbox.w50
+{
+ width: 47%;
+}
+.container .contactform .formbox .inputbox.w100
+{
+width: 100%;
+}
+
+.container .contactform .formbox .inputbox input,
+.container .contactform .formbox .inputbox textarea
+{
+width: 100%;
+resize: none;
+padding: 5px 0;
+font-size: 18px;
+font-weight:300;
+border: none;
+outline: none;
+border-bottom: 1px solid #777;
+}
+
+.container .contactform .formbox .inputbox textarea
+{
+height: 120px;
+}
+
+.container .contactform .formbox .inputbox span
+{
+ position: absolute;
+ left: 0;
+ padding: 5px 0; 
+ pointer-events: none;
+ font-size: 18px;
+ font-weight: 300;
+ transition: 0.3s;
+}
+.container .contactform .formbox .inputbox input:focus ~ span,
+.container .contactform .formbox .inputbox input:valid ~ span,
+.container .contactform .formbox .inputbox textarea:focus ~ span,
+.container .contactform .formbox .inputbox textarea:valid ~ span
+{
+ transform: translateY(-20px);
+ font-size: 15px;
+ font-weight: 400;
+ color:rgb(21,44,117);
+ font-weight: 500;
+}
+
+.container .contactform .formbox .inputbox input[type="submit"]
+{
+position: relative;
+cursor: pointer;
+background:rgb(97, 142, 142) ;
+color: #fff;
+border: none;
+border-radius: 5px;
+max-width: 150px;
+padding: 12px;
+}
+.container .contactform .formbox .inputbox input[type="submit"]:hover
+{
+background: rgb(89, 161, 161);
+}
+
+
+@media(max-width:1200px)
+{
+.container
+{
+    width: 90%;
+    min-width:auto;
+    margin: 20px;
+}
+
+.container .contactinfo{
+    top:0;
+    height:550px;
+    position:relative;
+    box-shadow: none;
+}
+
+
+.container .contactform 
+{
+    position:relative;
+    width:calc(100% - 350px);
+    padding-left:0;
+    margin-left:0;
+    padding: 40px;
+    height: 550px;
+}
+}
+
+@media(max-width:900px)
+ {
+    
+.sec-1::before
+{
+    display: none;
+}
+.container{
+    display:flex;
+    flex-direction: column-reverse;
+}
+.container .contactform
+{
+width:100%;
+height:auto;
+
+}
+.container .contactinfo
+{
+    width:100%;
+    flex-direction: row;
+    align-items: center;
+    height:440px;
+}
+.container .contactinfo ul.sci li 
+{
+    padding-top: 4px;
+    margin-right: 25px;
+    font-size: large;
+}
+.menu
+{
+    padding-left: 70px;
+}
+ }
+
+ @media(max-width:500px)
+ {
+    .container .contactform
+    {
+        padding: 20px;
+    }
+    .container .contactinfo
+
+    {
+        padding: 20px;
+        flex-direction: column;
+    }
+    .container .contactinfo ul.sci li
+    {
+        margin-right: 15px;
+        font-size: medium;
+    }
+
+    .container .contactform .formbox .inputbox.w50
+    {
+        width:100%;
+    }
+    
+
+
+
+}
+@media(max-width:400px)
+ {
+    .container .contactinfo ul.sci li
+    {
+        margin-right: 5px;
+        font-size: medium;
+    }
+}
+ 
+@media(max-width:260px)
+ {
+    .container .contactinfo ul.sci li
+    {
+        margin-right: 5px;
+        font-size: small;
+    }
+}
+ 
+
+
+
+
+
+
+
+
+
+
+.contai-21
+{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: linear-gradient(  90deg,lightblue 30% , #0a2c75 70%);
+} 
+
+.container-21
+{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+
+}
+.contai-21 .container-21 .card
+{
+    position: relative;
+    width:300px;
+    height: 450px;
+    margin:30px;
+    background: #287bff;
+    border-radius: 20px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    box-shadow:0 10px 0 white ,
+    inset 0 -15px 0 rgba(225,225,225,0.25),0 25px 0 rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contai-21 .container-21 .card::before
+{
+    content: ' ';
+    position: absolute;
+    top:-150px;
+    left:-39%;
+    width: 100%;
+    height: 120%;
+    background: linear-gradient(90deg,transparent, rgba(225,225,225,0.2));
+    transform: rotate(33deg);
+    pointer-events: none;
+    filter: blur(15px); 
+}
+
+.contai-21 .container-21 .card:nth-child(1)
+{
+    background: linear-gradient(to bottom,#382871,#3374a0);
+}
+.contai-21 .container-21 .card:nth-child(2)
+{
+    background: linear-gradient(to bottom,#35168b,#4b9adb);
+}
+.contai-21 .container-21 .card:nth-child(3)
+{
+    background: linear-gradient(to bottom,#18359d,rgba(65, 147, 120, 0.4));
+}
+.contai-21 .container-21 .card:nth-child(4)
+{
+    background: linear-gradient(to bottom,#5b86e5,#2d7f87);
+}
+
+.contai-21 .container-21 .icon
+{
+    position: relative;
+    width: 100px;
+    height:100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    box-shadow: 0 10px 0 rgba( 0 ,0 ,0 , 0.15),inset 0 -8px 0 lightblue;
+}
+
+
+.contai-21 .container-21 .card .icon:nth-child(1)
+{
+    background: linear-gradient(to bottom,#382871,#265f84);
+}
+
+
+.contai-21 .sci-21
+{
+    justify-content: center;
+    position: relative;
+    display: flex;
+
+}
+.contai-21 .container-21 .sci-21 li 
+{
+    list-style: none;
+    margin-right:0;
+    padding-top:10px;
+}
+.sci-21 li a
+{
+text-decoration: none;
+margin-bottom: 10px;
+}
+.sci-21 li a 
+{
+ font-size: 2.5em;
+position: relative;
+}
+.sci-21 a
+{
+   font-size: 2em;
+    color:rgb(247, 244, 244);
+    margin:  30px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.sci-21 a:hover
+{ 
+    transform: translatey(-20px);
+}
+
+.contai-21 .content
+{
+ position: absolute;
+ justify-content: center;
+ margin-top: 120px;
+}
+
+
+
+.contai-21 .content .imgcon-23 img
+{
+ height:200px;
+ justify-content: center;
+ border-radius: 10px;
+ margin-left: 18px;
+}
+
+.tem-23
+{
+    margin-left: 30px;
+}
+
+
+.tem-234
+{
+    margin-left: 20px;
+}
+
+.tem-235
+{
+    margin-left: 48px;
+}
+
+.role1
+{
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css? family=poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+font-size:'poppins',sans-serif;
+}
+
+  /*  display:flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+    min-width: 100vh ;
+    background: rgb(42, 50, 200);*/
+footer
+{
+    position:static;
+    width:100% ;
+   background: linear-gradient(  90deg,lightblue 30% , #0a2c75 70%);
+    min-height: 40px;
+    padding:10px 40px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+}
+footer .social_iconn ,
+footer.menu
+{ 
+    padding-left:14.5%;
+    padding-right:15%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+} 
+footer .social_iconn li,
+footer .menu li
+
+{
+    list-style:none;
+}
+footer .social_iconn li a,
+footer .menu li a
+{
+    font-size: 2em;
+    color:rgb(247, 244, 244);
+    margin:  10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer  .social_iconn li a:hover
+{
+    transform: translateY(-10px);
+}
+footer .menu li a
+{
+    font-size: 1.2em;
+    color:rgb(247, 244, 244) ;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+footer .menu li a:hover
+{ 
+    transform: translateX(20px);
+
+}
+footer .menu p 
+{ padding-top: 35%;
+    padding-bottom:5px;
+    padding-right:30%;
+    color:silver;
+    font-size: 1.3em;
+    justify-content: center;
+
+
+}
+footer .menu li a:hover
+{
+opacity: 90%;
+} 
+footer .map 
+ { 
+  display: flex;
+  margin-right: 0;
+  padding-top: 30PX;
+  padding-left: 10px;
+
+ }
+
+@media (max-width:1200px) {
+    footer
+    {
+        flex-direction: none;
+    }
+    
+}
+@media (max-width:900px) {
+    footer
+    {
+        flex-direction:column;
+        display: flex;
+        align-items: center;
+        align-content: center;
+
+    }
+    footer .menu p
+    {
+        padding-top: 5px;
+        color: rgb(0, 0, 0); 
+    }
+
+}
+
+@media (max-width:400px)
+{
+  footer .map iframe
+  {
+    width: 300px;
+  }
+  ul .menu{
+    margin-left:50px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*.contai-21 .container-21 .card:nth-child(2)
+{
+    background: linear-gradient(to bottom,#253b8c,#3172c7);
+}
+.contai-21 .container-21 .card:nth-child(1)
+{
+    background: linear-gradient(to bottom,#010a5a,#1378d0);
+}
+.contai-21 .container-21 .card:nth-child(4)
+{
+    background: linear-gradient(to bottom,#2e4683,#1fbede);
+}
+.contai-21 .container-21 .card:nth-child(3)
+{
+    background: linear-gradient(to bottom,#164275,#4294c3);
+}
+
+
+
+
+
+
+/*.contai-21 .container-21 .card:nth-child(1)
+{
+    background: linear-gradient(to bottom,#2b5876,#4e4376);
+}
+.contai-21 .container-21 .card:nth-child(2)
+{
+    background: linear-gradient(to bottom,#ffd89b,#19547b);
+}
+.contai-21 .container-21 .card:nth-child(3)
+{
+    background: linear-gradient(to bottom,#4ca1af,#c4e0e5);
+}
+.contai-21 .container-21 .card:nth-child(4)
+{
+    background: linear-gradient(to bottom,#2193b0,#6dd5ed);
+} *

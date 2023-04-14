@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+    font-family: 'Poppins',sans-serif;
+}
+.logo1{
+    size: 30px;
+    height: 130px;
+    width: 250px;
+    margin-bottom: 800px;
+    margin-left: 10px;
+}
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.slide-container{
+    max-width: 4220px;
+    width: 100%;
+    background-color: black;
+    padding: 40px 0;
+}
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+  }
+
+  .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
+.card{
+    
+    border-radius: 25px;
+    background-color:black;
+}
+.slide-content{
+    margin: 0 40px;
+}
+.image-content,.card-content{
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-content{
+    row-gap: 50px ;
+    position: relative;
+    padding: 25px 0 ;
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color:white;
+    border-radius: 25px 25px 25px 25px;
+
+}
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: relative;
+    height:40px;
+    width: 40px;
+    right: 0;
+    bottom: -40px;
+    background-color: white;
+
+    
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    
+}
+.card-image{
+    position: relative;
+    height: 450px;
+    padding: 3px;
+    width:450px ;
+    border-radius: 50%;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.name{
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+.desc{
+    font-size: 14px;
+    color: whitesmoke;
+    text-align: center;
+}
+.swiper-navBtn{
+    color: black;
+    transition: color 0.3s ease;
+
+}
+.swiper-navbtn:hover{
+    color: white;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 40px;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prev{
+    margin-left: 150px;
+}
+.swiper-pagination-bullet{
+    background-color: black;
+    opacity: 1;
+
+}
+@media screen and (max-width:768px){
+    .slide-content{
+        margin: 0 10px;
+    }
+    .swiper-navBtn{
+        display: none;
+    }
+
+    .card-image .card-img{
+        height: 65%;
+        width: 65%;
+        object-fit: cover;
+        align-items: center;
+        margin-left: 20%;
+        margin-top: 20%;
+    }
+    .logo1{
+        
+        height: 80px;
+        width: 153.6px;
+        margin-bottom: 800px;
+        margin-left: 10px;
+    }
+
+
+}
+
+:root {
+    --color: #4973ff;
+}
+
+.content923 {
+
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer {
+    position: relative;
+    background: #333333;
+    color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+footer .content923 {
+    position: static;
+    width: 100%;
+    min-height: 40px;
+    padding: 20px 40px;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .map {
+    position: relative;
+    z-index: 1;
+    margin: 0 0 10px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+footer .social-icon {
+    position: relative;
+    z-index: 1;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.4;
+}
+
+footer .social-icon {
+    list-style: none;
+}
+
+:host .ionicon {
+    color: white;
+}
+
+footer .menu {
+    position: relative;
+    z-index: 1;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.5);
+    list-style: none;
+}
+
+footer .menu li {
+    list-style: none;
+}
+
+
+footer .social-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+
+footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px 0;
+    flex-wrap: wrap;
+    margin-left: 10%;
+
+}
+
+
+footer .social-icon li a {
+    color: rgb(247, 244, 244);
+    margin: 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .menu li a {
+    color: rgb(247, 244, 244);
+    margin: 4px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social-icon li a:hover {
+    transform: translateY(-10px);
+}
+
+
+
+footer .menu ol li :hover {
+    transform: translateX(20px);
+
+}
+
+
+@media (max-width:1070px) {
+    footer {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        align-content: center;
+
+    }
+
+    footer .social-icon {
+        justify-content: center;
+        margin: auto;
+    }
+
+}
+
+@media (max-width:1070px) {
+    footer .menu {
+        margin-left: 4%;
+    }
+}
+
+@media (max-width:900px) {
+    footer .menu {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background-color: var(--color);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: 500ms;
+}
+
+.waves::before,
+.waves::after {
+    content: '';
+    position: absolute;
+    width: 300vw;
+    height: 300vw;
+    top: -65vw;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+
+.waves::before {
+    border-radius: 44%;
+    background: rgba(51, 51, 51, 1);
+    animation: waves 8s linear infinite;
+}
+
+.waves::after {
+    border-radius: 44%;
+    background: rgba(51, 51, 51, 0.5);
+    animation: waves 15s linear infinite;
+}
+
+@keyframes waves {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}

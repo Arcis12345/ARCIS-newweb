@@ -1,0 +1,499 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+  
+  }
+  .logo
+  {
+    width: 200px;
+  }
+  .hamburger
+  {
+    display: none;
+  }
+  
+  .nav-bar ul 
+  {
+    display: flex;
+  }
+  
+  .nav-bar ul li a
+  {
+    display: block;
+    color: #171515;
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+  
+  }
+  
+  .nav-bar ul li a:hover{
+    background: #171515;
+    color: #fefefe;
+  }
+  .nav-bar ul li a.active{
+    background: #171515;
+    color: #fefefe;
+  }
+  
+  @media only screen and (max-width:1320px)
+  {
+    header
+    {
+      padding: 0 50px;
+    }
+  }
+  
+  
+  @media only screen and (max-width:1100px)
+  {
+    header
+    {
+      padding: 0 30px;
+    }
+    .nav-bar ul li a {
+    padding: 10px 13px;
+    }
+  }
+  
+  @media only screen and (max-width:900px)
+  {
+    .nav-bar ul li a {
+    padding: 10px 8px;
+    }
+  }
+  
+  
+  
+  
+  @media only screen and (max-width:800px)
+  {
+    header
+    {
+      padding: 0 20px;
+    }
+    .nav-bar ul li a {
+    padding: 10px 5px;
+    }
+  }
+  
+  
+  @media only screen and (max-width:750px)
+  {
+    .hamburger
+    {
+      display:block;
+      cursor:pointer;
+  
+    }
+    .hamburger .line
+    {
+      width:30px;
+      height:3px;
+      background:#171515;
+      margin: 6px 0;
+      border-bottom-right-radius: 10px;
+    }
+    .nav-bar{
+      height: 0;
+      position: absolute;
+      top:80px;
+      left:0;
+      right: 0;
+      width: 100vw;
+      background: #f4f5f8;
+      transition: 0.2s;
+      overflow: hidden;
+      z-index: 100000;
+    }
+    .nav-bar.active
+    {
+      height:100%;
+    }
+     .nav-bar ul 
+     { 
+      display: block;
+      width: fit-content;
+      margin: 40px auto 0 auto;
+      text-align: center;
+      transition: 0.5s;
+      opacity:0;
+     }
+     .nav-bar.active ul 
+     {
+     opacity: 1;
+     }
+     .nav-bar ul li a {
+      margin-bottom:10px;
+     }
+     
+  }
+
+@media(max-width:768px){
+    .imgbox1{
+        position: relative;
+        width:120%;
+        height: 120%;
+    }
+    .imgbox1 img{
+        position: relative;
+        height: 150%;
+        width: calc(250% - 80px);
+        top: -100px;
+        right: 50px;
+        
+        animation: animateUser 4s linear infinite;
+    }
+    @keyframes animateUser{
+        50%{
+            right: 30px;
+            top: -90px;
+        }
+    }
+    .imgbox1 #splash{
+        position: absolute;
+        margin-right: 100px;
+        top: 80%;
+        left: 100%;
+        transform: translate(-50%,-50%) ;
+        width: 160%;
+        filter: saturate(200%);
+        animation: animate 4s linear infinite;
+    }
+    @keyframes animate{
+        50%{
+            top: 50%;
+            width: 155%;
+            left: 70%;
+        }
+    }
+
+}
+
+
+
+
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 80px);
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+p{
+    font-size: 20px;
+}
+.cols{
+    width: 50%;
+}
+.cols0{
+    width: 60%;
+    z-index: 5;
+}
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #3d535f;
+}
+.topline::after{
+    position: absolute;
+    content: ' ';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #0047AB;
+
+}
+h1{
+    display: block;
+    font-size: 3em;
+    font-weight: 900;
+    color: #3d535f;
+}
+.multitext{
+    color:#0047AB;
+    text-transform: capitalize;
+}
+.btns{
+    width: 100%;
+    position: relative;
+    left: 150px;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight:400;
+    color: #fff;
+    background-color:#3d535f;
+    padding: 8px 14px;
+    margin: 40px 5px ;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px;
+}
+button:hover{
+    background-color:#0047AB;
+}
+.imgbox1{
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+.imgbox1 img{
+    position: relative;
+    height: 100%;
+    width: calc(130% - 80px);
+    top: -100px;
+    right: 50px;
+    
+    animation: animateUser 4s linear infinite;
+}
+@keyframes animateUser{
+    50%{
+        right: 30px;
+        top: -90px;
+    }
+}
+.imgbox1 #splash{
+    position: absolute;
+    
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%,-50%) ;
+    width: 160%;
+    filter: saturate(200%);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    50%{
+        top: 49%;
+        width: 155%;
+
+    }
+}
+
+:root {
+    --color: #4973ff;
+}
+
+.content923 {
+
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer {
+    position: relative;
+    background: #333333;
+    color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+footer .content923 {
+    position: static;
+    width: 100%;
+    min-height: 40px;
+    padding: 20px 40px;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .map {
+    position: relative;
+    z-index: 1;
+    margin: 0 0 10px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+footer .social-icon {
+    position: relative;
+    z-index: 1;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.4;
+}
+
+footer .social-icon {
+    list-style: none;
+}
+
+:host .ionicon {
+    color: white;
+}
+
+footer .menu {
+    position: relative;
+    z-index: 1;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.5);
+    list-style: none;
+}
+
+footer .menu li {
+    list-style: none;
+}
+
+
+footer .social-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+
+footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px 0;
+    flex-wrap: wrap;
+    margin-left: 10%;
+
+}
+
+
+footer .social-icon li a {
+    color: rgb(247, 244, 244);
+    margin: 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .menu li a {
+    color: rgb(247, 244, 244);
+    margin: 4px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social-icon li a:hover {
+    transform: translateY(-10px);
+}
+
+
+
+footer .menu ol li :hover {
+    transform: translateX(20px);
+
+}
+
+
+@media (max-width:1070px) {
+    footer {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        align-content: center;
+
+    }
+
+    footer .social-icon {
+        justify-content: center;
+        margin: auto;
+    }
+
+}
+
+@media (max-width:1070px) {
+    footer .menu {
+        margin-left: 4%;
+    }
+}
+
+@media (max-width:900px) {
+    footer .menu {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background-color: var(--color);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: 500ms;
+}
+
+.waves::before,
+.waves::after {
+    content: '';
+    position: absolute;
+    width: 300vw;
+    height: 300vw;
+    top: -65vw;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+
+.waves::before {
+    border-radius: 44%;
+    background: rgba(51, 51, 51, 1);
+    animation: waves 8s linear infinite;
+}
+
+.waves::after {
+    border-radius: 44%;
+    background: rgba(51, 51, 51, 0.5);
+    animation: waves 15s linear infinite;
+}
+
+@keyframes waves {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+
