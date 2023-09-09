@@ -347,118 +347,129 @@ header {
     }
 }
 
-.a2019 {
-    margin-left: 125px;
-    margin-right: 10px;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    width: 400px;
-    height: 300px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    /* background-color:blue; */
-    border-radius: 20px;
-    background-image: url(2019.JPG);
+.a2019{
+  margin-left: 45px;
+  margin-right: 10px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  width: 400px;
+  height:300px;
+  display:inline-block;
+  background-repeat:no-repeat;
+  background-size:100%;
+  /* background-color:blue; */
+  border-radius:20px;
+  background-image:url(2019.JPG) ; 
 }
-
 @media screen and (max-width: 992px) {
-    .a2019 {
+    .a2019{
         flex-direction: column;
-        margin: 30px auto;
+     margin:30px auto;
     }
 }
-
-.a2020 {
-    /* background-color:blue; */
+.a2020{
+     /* background-color:blue; */
     margin-left: 45px;
     margin-right: 10px;
     margin-top: 60px;
     margin-bottom: 20px;
     width: 400px;
-    height: 300px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-image: url(team2019-2020.jpg);
-    border-radius: 20px;
+    height:300px;
+    display:inline-block;
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-image:url(2020.jpg) ; 
+    border-radius:20px;
 
 }
-
 @media screen and (max-width: 992px) {
-    .a2020 {
+    .a2020{
         flex-direction: column;
-        margin: 60px auto;
+        margin:60px auto;
     }
 }
-
-.a2021 {
+.a2021{
     /* background-color:blue; */
     margin-left: 45px;
     margin-right: 45px;
     margin-top: 60px;
     margin-bottom: 50px;
     width: 400px;
-    height: 300px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    border-radius: 20px;
-    background-image: url(team2020-2021.jpg);
-
+    height:300px;
+    display:inline-block;
+    background-repeat:no-repeat;
+    background-size:100%;
+    border-radius:20px;
+    background-image:url(2021.jpeg) ; 
+   
 }
-
 @media screen and (max-width: 992px) {
-    .a2021 {
+    .a2021{
         flex-direction: column;
-        margin: 30px auto;
+     margin:30px auto;
     }
 }
-
-.a2022 {
-    margin-left: 125px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 150px;
-    width: 400px;
-    height: 300px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: 100%;
+.a2022{
+    margin-left: 40px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 150px;
+  width: 400px;
+  height:300px;
+  display:inline-block;
+  background-repeat:no-repeat;
+  background-size:100%;
+  /* background-color:blue; */
+  border-radius:20px;
+ background-image:url(team2021-2022.jpg) ; 
+  
+}
+@media screen and (max-width: 992px) {
+    .a2022{
+        flex-direction: column;
+        margin:20px auto;
+    }
+}
+.a2023{
     /* background-color:blue; */
-    border-radius: 20px;
-    background-image: url(team2021-2022.jpg);
-
-}
-
-@media screen and (max-width: 992px) {
-    .a2022 {
-        flex-direction: column;
-        margin: 20px auto;
-    }
-}
-
-.a2023 {
-    /* background-color:blue; */
-    margin-top: 25px;
-    margin-bottom: 150px;
+    margin-left: 45px;
+    margin-top: 5px;
+    margin-bottom:150px;
     width: 400px;
-    height: 300px;
-    background-image: url(2023.jpeg);
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    border-radius: 20px;
+    height:300px;
+    background-image:url(2023.jpeg) ; 
+    display:inline-block;
+    background-repeat:no-repeat;
+    background-size:100%;
+    border-radius:20px;
 
 }
-
 @media screen and (max-width: 992px) {
-    .a2023 {
+    .a2023{
         flex-direction: column;
-        margin: 0 auto;
+        margin:0 auto;
     }
 }
+.a2024{
+    /* background-color:blue; */
+   
+    margin-top: 5px;
+    margin-bottom:150px;
+    width: 400px;
+    height:300px;
+    background-image:url(2024.jpeg) ; 
+    display:inline-block;
+    background-repeat:no-repeat;
+    background-size:100%;
+    border-radius:20px;
 
+}
+@media screen and (max-width: 992px) {
+    .a2024{
+        flex-direction: column;
+        margin:0 auto;
+    }
+}
 .b13 {
     align-items: center;
     justify-content: center;
