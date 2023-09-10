@@ -348,18 +348,17 @@ header {
 }
 
 .a2019{
-  margin-left: 65px;
-  margin-right: 10px;
-  margin-top: 60px;
-  margin-bottom: 20px;
-  width: 400px;
-  height:300px;
-  display:inline-block;
-  background-repeat:no-repeat;
-  background-size:100%;
-  /* background-color:blue; */
-  border-radius:20px;
-  background-image:url(2019.JPG) ; 
+  margin-left: 125px;
+    margin-right: 10px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 300px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 20px;
+    background-image: url(2019.JPG); 
 }
 @media screen and (max-width: 992px) {
     .a2019{
@@ -369,17 +368,17 @@ header {
 }
 .a2020{
      /* background-color:blue; */
-    margin-left: 65px;
+    margin-left: 45px;
     margin-right: 10px;
     margin-top: 60px;
     margin-bottom: 20px;
     width: 400px;
-    height:300px;
-    display:inline-block;
-    background-repeat:no-repeat;
-    background-size:100%;
-    background-image:url(2020.jpg) ; 
-    border-radius:20px;
+    height: 300px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 20px;
+    background-image: url(team2019-2020.jpg);
 
 }
 @media screen and (max-width: 992px) {
@@ -390,17 +389,17 @@ header {
 }
 .a2021{
     /* background-color:blue; */
-    margin-left: 65px;
+    margin-left: 45px;
     margin-right: 45px;
     margin-top: 60px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     width: 400px;
-    height:300px;
-    display:inline-block;
-    background-repeat:no-repeat;
-    background-size:100%;
-    border-radius:20px;
-    background-image:url(2021.jpeg) ; 
+    height: 300px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 20px;
+    background-image: url(team2020-2021.JPG); 
    
 }
 @media screen and (max-width: 992px) {
