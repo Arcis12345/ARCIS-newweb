@@ -586,7 +586,18 @@ background: linear-gradient(  90deg,lightblue 30% , #0a2c75 70%);
 {
     background: linear-gradient(to bottom,#5b86e5,#2d7f87);
 }
-
+.contai-21 .container-21 .card:nth-child(7)
+{
+    background: linear-gradient(to bottom,#4b9adb,#35168b);
+}
+.contai-21 .container-21 .card:nth-child(6)
+{
+    background: linear-gradient(to bottom,rgba(65, 147, 120, 0.4),#18359d);
+}
+.contai-21 .container-21 .card:nth-child(5)
+{
+    background: linear-gradient(to bottom,#2d7f87,#5b86e5);
+}
 .contai-21 .container-21 .icon
 {
     position: relative;
