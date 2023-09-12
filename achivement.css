@@ -4,7 +4,6 @@
     box-sizing:border-box;
     text-decoration: none;
     list-style: none;
-    font-family: 'Poppins',sans-serif;
 }
 
 
@@ -212,8 +211,8 @@ section{
 .container .cards
 {
     position: relative;
-    width:400px;
-    height:570px;
+    width:380px;
+    height:550px;
     background-color: #0a2c75;/*0A2c75*/
     margin: 10px;
     border-radius: 40px;
