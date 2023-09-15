@@ -36,6 +36,7 @@ header{
     display: block;
     color: #171515;
     font-size: 15px;
+    font-family:'poppins',sans-serif;
     padding: 10px 25px;
     border-radius: 50px;
     transition: 0.2s;
