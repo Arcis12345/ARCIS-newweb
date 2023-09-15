@@ -246,7 +246,7 @@ section{
 
 .container .cards:hover .imgsae
 {
-  transform: translateY(20px) scale(0.4);
+  transform: translateY(20px) scale(0.35);
 }
 
 
@@ -293,7 +293,7 @@ color: white;
 }
 .container .cards:hover .imgnasa
 {
-  transform:translateY(20px) scale(0.5);
+  transform:translateY(20px) scale(0.4);
 }
 .container .cards .imgnasa img
 { position: absolute;
@@ -335,7 +335,7 @@ padding-bottom: 135px;
 }
 .container .cards:hover .imgaiaa
 {
-  transform:translateY(20px) scale(0.5);
+  transform:translateY(20px) scale(0.4);
 }
 .container .cards .imgaiaa img
 { position: absolute;
