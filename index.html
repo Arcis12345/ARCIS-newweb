@@ -9,10 +9,159 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <title>Home page</title>
 </head>
-<body>
-    <center>
-        <h1><b>Website is under Maintenance due to technical difficulties and glitches,
-                                    See you soon.</b></h1>
-    </center>
+
+<body> <header>
+    <div >
+         <img src="Untitled design.png" class="logo" style="width: 150px;"></div>
+      <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </div>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="TEAMINDEXpgh.html">Our Team</a></li>
+        <li><a href="GUIDEpgh.html">Advisor</a></li>
+       <li><a  href="sponsor.html">Sponsor</a></li>
+       <li><a  href="achivement.html" >Achievement</a></li>
+       <li><a  href="gallery.html">Gallery</a></li>
+       <li><a  href="OURCREATIONpgh.html">Our Creations</a></li>
+       <li><a  href="contact.html">Contact</Contact></a></li>
+       
+      </ul>
+    </nav>
+  </header>
+   
+
+
+
+    <div class="wrapper">
+        <div class="cols cols0">
+            <span class="topline">Hello</span>
+            <h1>Greetings <span class="multitext">Aviators.</span></h1>
+            <p>Team Arcis is the Official Aero Design of Dayananda Sagar College of Engineering, Bengaluru. We
+                participate in two of the biggest student design competitions, held annually in the USA. We hold the title
+                of India's Leading Aero Design Team since 2015. Team Arcis functions as a start-up, raising funds via
+                sponsorships and collaborations, and as per the rules of the competition, we work independently of any
+                professional or academic help. </p>
+                <br>
+                <br>
+                <br>
+                <h1>Vision And Mission</h1>
+                <p>To excel as a team of innovative engineers, leveraging UAV, <br>UAS and other modern technologies for <br>solving real world problems.</p>
+                <br>
+                <br>
+                <p>To inculcate discipline as well as professional skills in students<br> so that they become responsible citizens who<br> are able to flourish in their respective careers. </p>
+            <div class="btns">
+                <a href="https://ketto.org/team-arcis" target="_blank">
+                    <button>Support Now</button>
+                </a>
+            </div>
+        </div>
+        <div class="cols cols1">
+            <div class="imgbox1">
+                <img src="21762384_80010067.jpg" id="splash">
+                <img src="InShot_20230305_145215543.png" id="plane">
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
 </body>
+<footer>
+    <div class="content923">
+
+        <div class="map">
+            <p><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7777.952262354541!2d77.56368199444965!3d12.909255593568705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae156310100001%3A0x71be53da4480fbbe!2sDayananda%20Sagar%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1673354105030!5m2!1sen!2sin"
+                    width="300px" height="150px" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+
+
+        <ul class="social-icon">
+
+            <li><a href="https://www.facebook.com/TeamArcis/?ref=br_rs" target="_blank"><ion-icon
+                        name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/teamarcis/" target="_blank"><ion-icon
+                        name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://www.youtube.com/channel/UCgNXVEqEhOzzWZ6XdZAd-1A" target="_blank"><ion-icon
+                        name="logo-youtube"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/company/team-arcis/" target="_blank"><ion-icon
+                        name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="https://teamarcis.medium.com/" target="_blank"><ion-icon name="logo-medium"></ion-icon></a>
+            </li>
+            <li><a href="https://www.behance.net/team_arcis" target="_blank"><ion-icon
+                        name="logo-behance"></ion-icon></a>
+            </li>
+        </ul>
+
+
+        <div class="menu">
+            <ul>
+                <div class="so-menu">
+                    <p>RESOURCES</p>
+                </div>
+                <ol>
+                    <li><a href="https://www.saeaerodesign.com/"> SAE AERO DESIGN </a></li>
+                    <li><a href="https://www.aiaa.org/dbf/example-dbf-feature">AIAA-DBF</a></li>
+                    <li><a href="https://www.dsce.edu.in/">DSCE </a></li>
+                </ol>
+            </ul>
+        </div>
+
+    </div>
+    <div class="waves"></div>
+</footer>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typingeffect = new Typed(".multitext", {
+        strings: ["Aviators", "Aspirators.", "Hustlers.", "Winners."],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1500,
+
+    })
+</script>
+<script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function () {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+</script>
+
+<script>
+    const hamburgers = document.querySelectorAll('.hamburger');
+    const samis = document.querySelectorAll('.sami');
+
+    hamburgers.forEach((hamburger, index) => {
+        hamburger.addEventListener('click', () => {
+            if (samis[index].style.height === '450px') {
+                samis[index].style.height = '2px';
+            } else {
+                samis[index].style.height = '450px';
+            }
+        });
+    });
+
+</script>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </html>
